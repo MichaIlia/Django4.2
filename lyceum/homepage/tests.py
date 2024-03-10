@@ -3,8 +3,7 @@ from http import HTTPStatus
 from django.test import Client, TestCase
 
 from rest_framework import status
-from rest_framework.test import APITestCase
-from rest_framework.response import Response
+from rest_framework.test import APITestCase, Reverse
 
 
 class StaticURLTests(TestCase):
