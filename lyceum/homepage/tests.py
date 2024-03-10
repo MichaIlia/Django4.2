@@ -11,4 +11,4 @@ class StaticURLTests(TestCase):
     def test_homepage_coffee(self):
         response = Client().get('/coffee/')
         self.assertEqual(response.status_code, 418)
-        self.assertIn('я чайник', response.content.decode())
+        self.assertIn('Я чайник', response.content.decode())
