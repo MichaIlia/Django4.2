@@ -1,5 +1,7 @@
 import os
+
 from dotenv import load_dotenv
+
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
