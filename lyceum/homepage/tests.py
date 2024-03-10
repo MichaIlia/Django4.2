@@ -3,8 +3,6 @@ from http import HTTPStatus
 from django.test import Client, TestCase
 
 
-
-
 class StaticURLTests(TestCase):
     def test_homepage_endpoint(self):
         response = Client().get('/')
@@ -14,5 +12,3 @@ class StaticURLTests(TestCase):
         response = Client().get('/coffee/')
         self.assertEqual(response.status_code, 418)
         self.assertIn('я чайник', response.content.decode())
-
-
