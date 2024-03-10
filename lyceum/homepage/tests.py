@@ -3,7 +3,7 @@ from http import HTTPStatus
 from django.test import Client, TestCase
 
 from rest_framework import status
-from rest_framework.test import APITestCase, Reverse
+from rest_framework.test import APITestCase, reverse
 
 
 class StaticURLTests(TestCase):
@@ -14,6 +14,7 @@ class StaticURLTests(TestCase):
     def test_homepage_coffee(self):
         response = Client().get('/coffee/')
         self.assertEqual(response.status_code, 418)
+
 
 class ExampleTestCase(APITestCase):
     def test_url_root(self):
